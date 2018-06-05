@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    display: block;
+}
+
+body {
+    min-height: 100%;
+    overflow-x: hidden;
+    background-color: #000000;
+}
+
+.container {
+    width: 100%;
+}
+
+.background {
+    
+}
+
+.blast {
+    text-align: center;
+    color: #ffffff;
+    font-size: 26px;
+}
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('E:/hovedopgave/site/background2.jpg');
+    background-attachment: fixed;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-color: #050607;
+    background-size: 100% auto;
+    position: relative;
+}
+
+#header {
+    padding: 24px 0;
+    text-align: center;
+}
+
+header, .om, .blast, .intro h1 {
+    z-index: 9000;
+}
+
+h1 {
+    text-align: center;
+    text-transform: none;
+    color: #ffffff;
+    font-size: 60px;
+}
+
+.content {
+    background: none;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
+
+.om {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 24px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.banner {
+    margin-bottom: -6px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.row {
+    display: table;
+    width: 100%;
+}
+
+.col-light {
+    background-color: #ffffff;
+    color: black;
+}
+
+.col {
+    display: table-cell;
+    vertical-align: top;
+    width: 50%;
+    padding: 70px;
+    background-color: #ffffff;
+    color: black;
+}
+
+.col-head {
+    font-size: 26px;
+}
+
+.col-red {
+    background-color:#430E00;
+    color: #ffffff;
+}
+
+.vid {
+    margin-bottom: -5px;
+}
+
+.youtubeplayer {
+    border: none;
+    width: 100%;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 767px) {
+    #logo {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .intro {
+        height: auto;
+        padding: 1em;
+        display: block;
+    }
+    
+    header img {
+        max-width: 35%;
+    }
+    
+    .blast {
+        font-size: 1em;
+    }
+    
+    .intro h1 {
+        font-size: 1.5em;
+    }
+    
+    .blast:nth-of-type(2), .om{
+        font-size: .8em;
+    }
+    
+    .banner {
+        display: none;
+    }
+    .col {
+        display: block;
+        width: 100%;
+        padding: 1em;
+        font-size: .8em;
+    }
+    .vid {
+        width: 100%;
+        height: 30vh;
+    }
+    
+    .vid iframe {
+        height: 30vh;
+    }
+}
